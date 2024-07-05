@@ -166,3 +166,4 @@ inputmaske_files/
 test.ipynb_checkpoints
 .dash/
 .DS_Store
+data/opinion-lexicon-English.rar

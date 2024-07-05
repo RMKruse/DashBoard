@@ -164,3 +164,5 @@ cython_debug/
 inputmaske.html
 inputmaske_files/
 test.ipynb_checkpoints
+.dash/
+.DS_Store

@@ -12,7 +12,7 @@ END_DATE = '2022-12-31'
 
 # Generate dates
 dates = pd.date_range(start=START_DATE, end=END_DATE, periods=NUM_RECORDS)
-dates = np.random.choice(dates, replace=True, size=NUM_RECORDS)
+# dates = np.random.choice(dates, replace=True, size=NUM_RECORDS)
 
 # Generate happiness levels
 def simulate_happiness(n):
@@ -22,7 +22,7 @@ def simulate_happiness(n):
     y = (y - np.min(y)) / (np.max(y) - np.min(y)) * 4 + 1
     return y
 
-happiness_levels = simulate_happiness(NUM_RECORDS).round().astype(int)
+happiness_levels = simulate_happiness(NUM_RECORDS).astype(int)
 
 # Generate Age Groups
 def generate_age_groups(n):
@@ -57,5 +57,5 @@ df_full_sentences = pd.DataFrame({
 
 
 # Save to new CSV
-file_path_full_sentences = "C:/Users/RNKRUSE/Git/DashBoard/data/simulated_data.csv"
+file_path_full_sentences = "/Users/rkruse/Git/DashBoard/data/simulated_data.csv"
 df_full_sentences.to_csv(file_path_full_sentences, index=False)

@@ -2,6 +2,7 @@ streamlit
 pandas
 altair
 tqdm
+ipywidgets
 
 # für simulation
 numpy 

@@ -1,11 +1,22 @@
 streamlit
 pandas
 altair
-plotly
+tqdm
 
 # für simulation
 numpy 
 pandas
-matplotlib
 faker
 statsmodels
+
+# für plots 
+plotly
+matplotlib
+nbformat>=4.2.0
+colorama 
+seaborn
+
+# nlp
+nltk
+wordcloud
+transformers
